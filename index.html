@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Map</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="icon" href="favicon.png"/>
+		<link rel="stylesheet" href="main.css" />
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<h1>Chooze city in the center:</h1>
+				<select class="select_city">
+					<option value="chernihiv">Chernihiv</option>
+					<option value="poltava">Poltava</option>
+					<option value="kyiv">Kyiv</option>
+					<option value="odesa">Odesa</option>
+				</select>
+				<div id="map"></div>
+
+				<div class="inline">
+					<p class="centre">Enter point "A" coordinate</p>
+					<label class="padding" for="latA">lat A:</label>
+					<input type="text" name="latA" id="latA" value="51.4938438" placeholder="Enter start lat" required>
+					<label class="padding" for="lngA:">lng A:</label>
+					<input type="text" name="lngA" id="lngA" value="31.2999212" placeholder="Enter start lng" required>
+				</div>
+
+				<div class="inline">
+					<p class="centre">Enter point "B" coordinate</p>
+					<label class="padding" for="latB">lat B:</label>
+					<input type="text" name="latB" id="latB" value="50.4492763" placeholder="Enter start lat" required>
+					<label class="padding" for="lngB:">lng B:</label>
+					<input type="text" name="lngB" id="lngB" value="30.5143413" placeholder="Enter start lng" required>
+				</div>
+
+				<div class="inline">
+					<button id="route">get route</button>
+				</div>
+
+			</div>
+		</main>
+
+
+
+    <script defer src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	</body>
+</html>

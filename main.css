@@ -1,0 +1,76 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background: #a23e5f;
+    color:  #fff;
+}
+
+#map{
+	min-height: 550px;
+}
+
+.container {
+	margin: auto;
+    padding: 0 15px;
+    max-width: 1230px;
+    width: 100%;
+}
+
+.select_city,
+button {
+	margin: 10px 0;
+	padding: 5px;
+	color: #FFF;
+	font-size: 16px;
+	text-transform: capitalize;
+	background: #a5b076;
+	border: 4px solid #a5b076;
+	outline: none;
+	transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+
+.select_city:hover,
+button:hover {
+    color: #a2002b;
+	cursor: pointer;
+}
+
+#route {
+	text-transform: uppercase;
+}
+
+h1 {
+	display: inline-block;
+	padding: 5px;
+	color: #FFF;
+	font-size: 25px;
+}
+
+.inline {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.padding {
+	padding: 5px;
+}
+
+.centre {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* стиль инфовиндов */
+
+
+.gm-style-iw {
+   color: #a2002b;
+}
